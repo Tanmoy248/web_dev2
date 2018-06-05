@@ -1,0 +1,5 @@
+# Use maven to initialize the project structure
+mvn -DarchetypeGroupId=org.codehaus.mojo.archetypes -DarchetypeArtifactId=webapp-javaee7 -DarchetypeVersion=1.1 -DgroupId=com.tanmoy.javaee-getting-started -DartifactId=bookstore-back -Dversion=1.0 -Darchetype.interactive=false --batch-mode -Dpackage=com.tanmoy.bookstore archetype:generate
+
+# setup wildfly to run 
+Management user: training/training
