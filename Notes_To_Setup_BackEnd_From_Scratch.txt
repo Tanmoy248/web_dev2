@@ -3,3 +3,9 @@ mvn -DarchetypeGroupId=org.codehaus.mojo.archetypes -DarchetypeArtifactId=webapp
 
 # setup wildfly to run 
 Management user: training/training
+
+# include hibernate in pom.xml
+change the <scope>provided</scope> in pom to avoid errors during deployment to wildfly
+
+# A bookStore class is included that uses javax.persistence module 
+# After deployment the ddl is generated inside wildfly/bin/bookStoreCreate.ddl file (name is mentioned in persistence.xml file)
